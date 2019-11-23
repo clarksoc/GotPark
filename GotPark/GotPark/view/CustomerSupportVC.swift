@@ -23,7 +23,6 @@ class CustomerSupportVC: UIViewController {
         
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
-    
 
     @IBAction func supportPhoneClick(){
         let phone = 18004687275
