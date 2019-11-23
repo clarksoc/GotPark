@@ -23,6 +23,7 @@
 		9212C0362389B65F00B9042D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9212C0342389B65F00B9042D /* LaunchScreen.storyboard */; };
 		924225DF2389BAF80001582C /* CustomerSupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924225DE2389BAF80001582C /* CustomerSupportVC.swift */; };
 		924225E32389C16D0001582C /* CustomerSupportImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 924225E22389C16D0001582C /* CustomerSupportImage.png */; };
+		924225E52389CDF90001582C /* AppManualVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924225E42389CDF90001582C /* AppManualVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		9212C0372389B65F00B9042D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		924225DE2389BAF80001582C /* CustomerSupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSupportVC.swift; sourceTree = "<group>"; };
 		924225E22389C16D0001582C /* CustomerSupportImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CustomerSupportImage.png; sourceTree = "<group>"; };
+		924225E42389CDF90001582C /* AppManualVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManualVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		9212C0252389B65E00B9042D /* GotPark */ = {
 			isa = PBXGroup;
 			children = (
+				924225E62389CE130001582C /* HTML */,
 				9212C03F2389B70B00B9042D /* controller */,
 				9212C03E2389B70400B9042D /* view */,
 				9212C03D2389B6F700B9042D /* model */,
@@ -110,6 +113,7 @@
 				720D85332389BCD900013B6B /* ParkingReceiptListVC.swift */,
 				720D85352389BCF500013B6B /* HomeVC.swift */,
 				720D85392389BFC000013B6B /* SignInVC.swift */,
+				924225E42389CDF90001582C /* AppManualVC.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -119,6 +123,13 @@
 			children = (
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		924225E62389CE130001582C /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HTML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 				720D85362389BCF500013B6B /* HomeVC.swift in Sources */,
 				924225DF2389BAF80001582C /* CustomerSupportVC.swift in Sources */,
 				9212C0292389B65E00B9042D /* SceneDelegate.swift in Sources */,
+				924225E52389CDF90001582C /* AppManualVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
