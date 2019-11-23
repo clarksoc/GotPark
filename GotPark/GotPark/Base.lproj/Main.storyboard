@@ -47,25 +47,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer Support " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3b-eU-RYa">
-                                <rect key="frame" x="81" y="202" width="252" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Support " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3b-eU-RYa">
+                                <rect key="frame" x="20" y="445" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Lm-mX-34h">
-                                <rect key="frame" x="87" y="54" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CustomerSupportImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Lm-mX-34h">
+                                <rect key="frame" x="10" y="57" width="394" height="380"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Via Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNC-A1-cDM">
+                                <rect key="frame" x="10" y="512" width="394" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tK-Yx-dgB">
+                                <rect key="frame" x="10" y="558" width="394" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="GotParkCustomerSupport@park.ca"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHi-ZP-uEv">
+                                <rect key="frame" x="10" y="675" width="394" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="1 (800) GOT PARK"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contract Us Via Phone: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMe-cf-kJc">
+                                <rect key="frame" x="10" y="629" width="394" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="mHi-ZP-uEv" secondAttribute="trailing" constant="10" id="4gz-6J-whd"/>
+                            <constraint firstItem="mHi-ZP-uEv" firstAttribute="top" secondItem="XMe-cf-kJc" secondAttribute="bottom" constant="17" id="9dg-qE-Eyk"/>
+                            <constraint firstItem="pNC-A1-cDM" firstAttribute="top" secondItem="q3b-eU-RYa" secondAttribute="bottom" constant="30" id="9md-bn-scT"/>
+                            <constraint firstItem="0tK-Yx-dgB" firstAttribute="top" secondItem="pNC-A1-cDM" secondAttribute="bottom" constant="17" id="Eg3-3b-Y9m"/>
+                            <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="XMe-cf-kJc" secondAttribute="trailing" constant="10" id="GsC-ub-G9b"/>
+                            <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="0tK-Yx-dgB" secondAttribute="trailing" constant="10" id="J2i-ke-6U4"/>
+                            <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="q3b-eU-RYa" secondAttribute="trailing" constant="20" id="LS4-xD-FAx"/>
+                            <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="pNC-A1-cDM" secondAttribute="trailing" constant="10" id="N64-Pl-6ZX"/>
+                            <constraint firstItem="EqK-ts-hir" firstAttribute="bottom" secondItem="mHi-ZP-uEv" secondAttribute="bottom" constant="146" id="TOQ-Lp-QxF"/>
+                            <constraint firstItem="mHi-ZP-uEv" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="Wlf-uO-Hmy"/>
+                            <constraint firstItem="pNC-A1-cDM" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="X3C-o8-3Fu"/>
+                            <constraint firstItem="XMe-cf-kJc" firstAttribute="top" secondItem="0tK-Yx-dgB" secondAttribute="bottom" constant="30" id="dT8-Jb-JgP"/>
+                            <constraint firstItem="q3b-eU-RYa" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="20" id="hl7-C7-KSD"/>
+                            <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="8Lm-mX-34h" secondAttribute="trailing" constant="10" id="hsU-t0-SRx"/>
+                            <constraint firstItem="q3b-eU-RYa" firstAttribute="top" secondItem="8Lm-mX-34h" secondAttribute="bottom" constant="8" symbolic="YES" id="itQ-EM-XcQ"/>
+                            <constraint firstItem="8Lm-mX-34h" firstAttribute="top" secondItem="EqK-ts-hir" secondAttribute="top" constant="13" id="noN-kr-LAQ"/>
+                            <constraint firstItem="8Lm-mX-34h" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="npP-PY-1oK"/>
+                            <constraint firstItem="0tK-Yx-dgB" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="t8k-sW-isb"/>
+                            <constraint firstItem="XMe-cf-kJc" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="uqn-EI-qMs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EqK-ts-hir"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0k-5q-p9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="818"/>
+            <point key="canvasLocation" x="121.73913043478262" y="817.63392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CustomerSupportImage.png" width="384" height="182.39999389648438"/>
+    </resources>
 </document>
