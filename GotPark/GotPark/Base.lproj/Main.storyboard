@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7bg-Ws-3Ja">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F0B-Wg-JJz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -237,27 +237,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqf-Gk-8fP">
-                                <rect key="frame" x="0.0" y="64" width="414" height="778"/>
+                                <rect key="frame" x="0.0" y="180" width="414" height="662"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YSA-oj-r0F">
+                                <rect key="frame" x="0.0" y="44" width="414" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="blY-2k-mlT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="YSA-oj-r0F" firstAttribute="top" secondItem="LlN-BK-rTj" secondAttribute="top" id="Vbb-qi-3rY"/>
+                            <constraint firstItem="zqf-Gk-8fP" firstAttribute="top" secondItem="YSA-oj-r0F" secondAttribute="bottom" constant="8" symbolic="YES" id="Yhm-LD-eze"/>
                             <constraint firstItem="LlN-BK-rTj" firstAttribute="bottom" secondItem="zqf-Gk-8fP" secondAttribute="bottom" constant="20" id="aRi-5k-IF5"/>
-                            <constraint firstItem="zqf-Gk-8fP" firstAttribute="top" secondItem="LlN-BK-rTj" secondAttribute="top" constant="20" id="jRZ-U0-LYX"/>
+                            <constraint firstItem="LlN-BK-rTj" firstAttribute="trailing" secondItem="YSA-oj-r0F" secondAttribute="trailing" id="b6W-fn-DcE"/>
+                            <constraint firstItem="YSA-oj-r0F" firstAttribute="leading" secondItem="LlN-BK-rTj" secondAttribute="leading" id="nsL-tP-oDy"/>
                             <constraint firstItem="LlN-BK-rTj" firstAttribute="trailing" secondItem="zqf-Gk-8fP" secondAttribute="trailing" id="x5e-y2-UL6"/>
                             <constraint firstItem="zqf-Gk-8fP" firstAttribute="leading" secondItem="LlN-BK-rTj" secondAttribute="leading" id="zYW-kD-bbu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LlN-BK-rTj"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="zqf-Gk-8fP" id="EQl-mu-aLJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Voz-RW-B5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-726" y="818"/>
+            <point key="canvasLocation" x="-726.08695652173924" y="817.63392857142856"/>
         </scene>
     </scenes>
     <resources>
