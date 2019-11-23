@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		720D85282389BC7A00013B6B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85272389BC7A00013B6B /* SignInVC.swift */; };
 		720D852A2389BC8B00013B6B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85292389BC8B00013B6B /* SignUpVC.swift */; };
 		720D852C2389BC9A00013B6B /* LocateNearbyParkingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D852B2389BC9A00013B6B /* LocateNearbyParkingVC.swift */; };
 		720D85302389BCB700013B6B /* NewParkingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D852F2389BCB700013B6B /* NewParkingVC.swift */; };
 		720D85322389BCC100013B6B /* ParkingReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85312389BCC100013B6B /* ParkingReceiptVC.swift */; };
 		720D85342389BCD900013B6B /* ParkingReceiptListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85332389BCD900013B6B /* ParkingReceiptListVC.swift */; };
 		720D85362389BCF500013B6B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85352389BCF500013B6B /* HomeVC.swift */; };
+		720D853A2389BFC000013B6B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85392389BFC000013B6B /* SignInVC.swift */; };
 		9212C0272389B65E00B9042D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212C0262389B65E00B9042D /* AppDelegate.swift */; };
 		9212C0292389B65E00B9042D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212C0282389B65E00B9042D /* SceneDelegate.swift */; };
 		9212C02B2389B65E00B9042D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212C02A2389B65E00B9042D /* ViewController.swift */; };
@@ -25,13 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		720D85272389BC7A00013B6B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		720D85292389BC8B00013B6B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		720D852B2389BC9A00013B6B /* LocateNearbyParkingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateNearbyParkingVC.swift; sourceTree = "<group>"; };
 		720D852F2389BCB700013B6B /* NewParkingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewParkingVC.swift; sourceTree = "<group>"; };
 		720D85312389BCC100013B6B /* ParkingReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingReceiptVC.swift; sourceTree = "<group>"; };
 		720D85332389BCD900013B6B /* ParkingReceiptListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingReceiptListVC.swift; sourceTree = "<group>"; };
 		720D85352389BCF500013B6B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		720D85392389BFC000013B6B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		9212C0232389B65E00B9042D /* GotPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GotPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9212C0262389B65E00B9042D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9212C0282389B65E00B9042D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,13 +100,13 @@
 			isa = PBXGroup;
 			children = (
 				924225DE2389BAF80001582C /* CustomerSupportVC.swift */,
-				720D85272389BC7A00013B6B /* SignInVC.swift */,
 				720D85292389BC8B00013B6B /* SignUpVC.swift */,
 				720D852B2389BC9A00013B6B /* LocateNearbyParkingVC.swift */,
 				720D852F2389BCB700013B6B /* NewParkingVC.swift */,
 				720D85312389BCC100013B6B /* ParkingReceiptVC.swift */,
 				720D85332389BCD900013B6B /* ParkingReceiptListVC.swift */,
 				720D85352389BCF500013B6B /* HomeVC.swift */,
+				720D85392389BFC000013B6B /* SignInVC.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -191,11 +191,11 @@
 			files = (
 				720D852A2389BC8B00013B6B /* SignUpVC.swift in Sources */,
 				720D85302389BCB700013B6B /* NewParkingVC.swift in Sources */,
+				720D853A2389BFC000013B6B /* SignInVC.swift in Sources */,
 				9212C0312389B65E00B9042D /* GotPark.xcdatamodeld in Sources */,
 				9212C02B2389B65E00B9042D /* ViewController.swift in Sources */,
 				720D85342389BCD900013B6B /* ParkingReceiptListVC.swift in Sources */,
 				720D85322389BCC100013B6B /* ParkingReceiptVC.swift in Sources */,
-				720D85282389BC7A00013B6B /* SignInVC.swift in Sources */,
 				720D852C2389BC9A00013B6B /* LocateNearbyParkingVC.swift in Sources */,
 				9212C0272389B65E00B9042D /* AppDelegate.swift in Sources */,
 				720D85362389BCF500013B6B /* HomeVC.swift in Sources */,
