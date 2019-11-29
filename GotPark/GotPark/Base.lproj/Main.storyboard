@@ -406,26 +406,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ml7-IE-dmq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoN-N2-DOI">
+                                <rect key="frame" x="10" y="812" width="394" height="30"/>
+                                <state key="normal" title="Nearby Parking"/>
+                                <connections>
+                                    <action selector="doNearbySearch" destination="w4K-1V-tUW" eventType="touchUpInside" id="acK-rP-pua"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Pml-iJ-rpU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="748"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ml7-IE-dmq" firstAttribute="top" secondItem="LM9-Rt-hdZ" secondAttribute="top" id="0AE-YO-X7b"/>
-                            <constraint firstItem="LM9-Rt-hdZ" firstAttribute="trailing" secondItem="Ml7-IE-dmq" secondAttribute="trailing" id="MDq-NT-m7M"/>
-                            <constraint firstItem="LM9-Rt-hdZ" firstAttribute="bottom" secondItem="Ml7-IE-dmq" secondAttribute="bottom" id="bik-HR-jF2"/>
-                            <constraint firstItem="Ml7-IE-dmq" firstAttribute="leading" secondItem="LM9-Rt-hdZ" secondAttribute="leading" id="f4d-C8-2FO"/>
+                            <constraint firstItem="LM9-Rt-hdZ" firstAttribute="bottom" secondItem="OoN-N2-DOI" secondAttribute="bottom" constant="20" id="3Ma-jm-OI4"/>
+                            <constraint firstItem="Pml-iJ-rpU" firstAttribute="top" secondItem="LM9-Rt-hdZ" secondAttribute="top" id="4fX-xs-gwz"/>
+                            <constraint firstItem="OoN-N2-DOI" firstAttribute="top" secondItem="Pml-iJ-rpU" secondAttribute="bottom" constant="20" id="BpV-C9-j8W"/>
+                            <constraint firstItem="Pml-iJ-rpU" firstAttribute="leading" secondItem="LM9-Rt-hdZ" secondAttribute="leading" id="Gk9-Fy-cYy"/>
+                            <constraint firstItem="LM9-Rt-hdZ" firstAttribute="trailing" secondItem="Pml-iJ-rpU" secondAttribute="trailing" id="XjX-1k-e5Z"/>
+                            <constraint firstItem="OoN-N2-DOI" firstAttribute="leading" secondItem="LM9-Rt-hdZ" secondAttribute="leading" constant="10" id="g4e-hg-xzX"/>
+                            <constraint firstItem="OoN-N2-DOI" firstAttribute="top" secondItem="Pml-iJ-rpU" secondAttribute="bottom" constant="20" id="pcb-J0-qRE"/>
+                            <constraint firstItem="LM9-Rt-hdZ" firstAttribute="trailing" secondItem="OoN-N2-DOI" secondAttribute="trailing" constant="10" id="rAi-li-gvX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LM9-Rt-hdZ"/>
                     </view>
                     <connections>
-                        <outlet property="parkingMap" destination="Ml7-IE-dmq" id="zmL-oh-eM4"/>
+                        <outlet property="parkingMap" destination="Pml-iJ-rpU" id="Pq7-Gt-LaZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ve0-Lx-6EH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="809"/>
+            <point key="canvasLocation" x="911.59420289855075" y="808.92857142857144"/>
         </scene>
         <!--App ManualVC-->
         <scene sceneID="7rM-vF-Ci0">

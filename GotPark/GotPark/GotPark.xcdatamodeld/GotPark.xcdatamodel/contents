@@ -8,19 +8,22 @@
         <attribute name="parkPlate" optional="YES" attributeType="String"/>
         <attribute name="suiteNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
-    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="carPlate" optional="YES" attributeType="String"/>
-        <attribute name="creditCvv" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    <entity name="PaymentEntity" representedClassName="PaymentEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="creditCVV" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="creditExpiry" optional="YES" attributeType="String"/>
         <attribute name="creditName" optional="YES" attributeType="String"/>
         <attribute name="creditNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="carPlate" optional="YES" attributeType="String"/>
         <attribute name="firstName" optional="YES" attributeType="String"/>
         <attribute name="lastName" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="UserEntity" positionX="-63" positionY="-18" width="128" height="178"/>
         <element name="ParkingEntity" positionX="-36" positionY="81" width="128" height="133"/>
+        <element name="UserEntity" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="PaymentEntity" positionX="-36" positionY="90" width="128" height="103"/>
     </elements>
 </model>
