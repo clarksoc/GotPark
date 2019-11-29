@@ -48,6 +48,7 @@
 		924225E22389C16D0001582C /* CustomerSupportImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CustomerSupportImage.png; sourceTree = "<group>"; };
 		924225E42389CDF90001582C /* AppManualVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManualVC.swift; sourceTree = "<group>"; };
 		924225F12389E7D60001582C /* AppManual.html */ = {isa = PBXFileReference; explicitFileType = text.html; path = AppManual.html; sourceTree = "<group>"; };
+		92DB0C2B23909BA800F90683 /* Toronto.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Toronto.gpx; path = GotPark/Toronto.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		9212C01A2389B65E00B9042D = {
 			isa = PBXGroup;
 			children = (
+				92DB0C2B23909BA800F90683 /* Toronto.gpx */,
 				9212C0252389B65E00B9042D /* GotPark */,
 				9212C0242389B65E00B9042D /* Products */,
 			);

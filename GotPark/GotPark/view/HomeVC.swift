@@ -9,6 +9,8 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    
+    let sbMain : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +18,40 @@ class HomeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func addClick(_ sender: Any) {
+        let newVC = sbMain.instantiateViewController(withIdentifier: "NewScene") as! NewParkingVC
+        
+        navigationController?.pushViewController(newVC, animated: true)
     }
-    */
-
+    
+    @IBAction func viewReceiptClick(_ sender: Any) {
+        let parkingVC = sbMain.instantiateViewController(withIdentifier: "ParkingReceiptScene") as! ParkingReceiptVC
+        
+        navigationController?.pushViewController(parkingVC, animated: true)
+    }
+    
+    @IBAction func viewReceiptList(_ sender: Any) {
+        let parkingListVC = sbMain.instantiateViewController(withIdentifier: "ParkingReceiptListScene") as! ParkingReceiptListVC
+        
+        navigationController?.pushViewController(parkingListVC, animated: true)
+    }
+    
+    @IBAction func nearbyClick(_ sender: Any) {
+        let nearbyVC = sbMain.instantiateViewController(withIdentifier: "NearbyScene") as! LocateNearbyParkingVC
+        
+        navigationController?.pushViewController(nearbyVC, animated: true)
+    }
+    
+    
+    @IBAction func manualClick(_ sender: Any) {
+            let manualVC = sbMain.instantiateViewController(withIdentifier: "ManualScene") as! AppManualVC
+            
+            navigationController?.pushViewController(manualVC, animated: true)
+    }
+    
+    @IBAction func supportClick(_ sender: Any) {
+        let supportVC = sbMain.instantiateViewController(withIdentifier: "SupportScene") as! CustomerSupportVC
+        
+        navigationController?.pushViewController(supportVC, animated: true)
+    }
 }

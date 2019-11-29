@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ParkingReceiptListVC: UIViewController {
+class ParkingReceiptListVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F0B-Wg-JJz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7bg-Ws-3Ja">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -23,14 +23,142 @@
             </objects>
             <point key="canvasLocation" x="-793" y="138"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Sign InVC-->
+        <scene sceneID="kYg-li-vvR">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="SignInVC" id="cDH-sY-mzs" customClass="SignInVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IDc-eJ-LtK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HfB-1e-eCl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEC-nG-9qp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="-606"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="cct-zc-4zo">
+            <objects>
+                <viewController storyboardIdentifier="SignUpScene" id="vjQ-5s-caI" customClass="SignUpVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EKh-yS-UWA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="r00-AZ-OOq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efh-9S-HwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="-612"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeScene" id="BYZ-38-t0r" customClass="HomeVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Got Park" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiC-A0-F0O">
+                                <rect key="frame" x="20" y="88" width="374" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJw-zp-CnJ">
+                                <rect key="frame" x="20" y="243" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add Parking"/>
+                                <connections>
+                                    <action selector="addClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="juB-bT-vHH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13e-zk-1Le">
+                                <rect key="frame" x="20" y="309" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="View Parking Receipt"/>
+                                <connections>
+                                    <action selector="viewReceiptClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85d-Uv-mUf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3A7-yE-ZrO">
+                                <rect key="frame" x="20" y="375" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="View Parking Receipt List"/>
+                                <connections>
+                                    <action selector="viewReceiptList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q29-i4-fLN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0A-Lk-su7">
+                                <rect key="frame" x="20" y="441" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Search Nearby Parking"/>
+                                <connections>
+                                    <action selector="nearbyClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uuv-eI-QlQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpJ-fc-rpX">
+                                <rect key="frame" x="20" y="507" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Update User Profile"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7u-eS-xNv">
+                                <rect key="frame" x="20" y="573" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Got Park User Manual"/>
+                                <connections>
+                                    <action selector="manualClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFP-Ag-Ovn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqj-4b-LwI">
+                                <rect key="frame" x="20" y="770" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npq-jf-bIX">
+                                <rect key="frame" x="20" y="639" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Contact Us"/>
+                                <connections>
+                                    <action selector="supportClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uN7-Gd-NGa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U7u-eS-xNv" secondAttribute="trailing" constant="20" id="5nT-jd-KY4"/>
+                            <constraint firstItem="3A7-yE-ZrO" firstAttribute="top" secondItem="13e-zk-1Le" secondAttribute="bottom" constant="30" id="66X-hI-EM9"/>
+                            <constraint firstItem="npq-jf-bIX" firstAttribute="top" secondItem="U7u-eS-xNv" secondAttribute="bottom" constant="30" id="7OY-5R-qxV"/>
+                            <constraint firstItem="f0A-Lk-su7" firstAttribute="top" secondItem="3A7-yE-ZrO" secondAttribute="bottom" constant="30" id="7dh-bM-AED"/>
+                            <constraint firstItem="U7u-eS-xNv" firstAttribute="top" secondItem="lpJ-fc-rpX" secondAttribute="bottom" constant="30" id="CAh-RI-8Nr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oiC-A0-F0O" secondAttribute="trailing" constant="20" id="DL6-ul-RsD"/>
+                            <constraint firstItem="f0A-Lk-su7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DOR-Ga-ITU"/>
+                            <constraint firstItem="lpJ-fc-rpX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Dhj-zq-cFc"/>
+                            <constraint firstItem="iJw-zp-CnJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GxS-xD-YPN"/>
+                            <constraint firstItem="npq-jf-bIX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L5f-UT-WXR"/>
+                            <constraint firstItem="oiC-A0-F0O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MQj-oN-w6f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iJw-zp-CnJ" secondAttribute="trailing" constant="20" id="ODR-3l-E76"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fqj-4b-LwI" secondAttribute="bottom" constant="44" id="RSa-of-nDK"/>
+                            <constraint firstItem="Fqj-4b-LwI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Sqg-ru-vvC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="npq-jf-bIX" secondAttribute="trailing" constant="20" id="TCY-gw-nk3"/>
+                            <constraint firstItem="lpJ-fc-rpX" firstAttribute="top" secondItem="f0A-Lk-su7" secondAttribute="bottom" constant="30" id="YIs-M3-nn6"/>
+                            <constraint firstItem="iJw-zp-CnJ" firstAttribute="top" secondItem="oiC-A0-F0O" secondAttribute="bottom" constant="95" id="b16-58-Fwh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3A7-yE-ZrO" secondAttribute="trailing" constant="20" id="cWf-V4-eHY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f0A-Lk-su7" secondAttribute="trailing" constant="20" id="cWy-3E-AsF"/>
+                            <constraint firstItem="oiC-A0-F0O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cub-Dx-7h0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fqj-4b-LwI" secondAttribute="trailing" constant="20" id="dMs-bb-Ht8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lpJ-fc-rpX" secondAttribute="trailing" constant="20" id="jgP-ld-VDy"/>
+                            <constraint firstItem="U7u-eS-xNv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lgO-RF-rcX"/>
+                            <constraint firstItem="3A7-yE-ZrO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mgY-kv-kuX"/>
+                            <constraint firstItem="Fqj-4b-LwI" firstAttribute="top" secondItem="npq-jf-bIX" secondAttribute="bottom" constant="95" id="ovY-Nl-Ekr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="13e-zk-1Le" secondAttribute="trailing" constant="20" id="r4L-gN-MKG"/>
+                            <constraint firstItem="13e-zk-1Le" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tte-78-a2t"/>
+                            <constraint firstItem="13e-zk-1Le" firstAttribute="top" secondItem="iJw-zp-CnJ" secondAttribute="bottom" constant="30" id="zzK-u4-tqj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="MSq-dT-Oiu"/>
@@ -42,7 +170,7 @@
         <!--New ParkingVC-->
         <scene sceneID="Ly5-r8-fkg">
             <objects>
-                <viewController id="iRk-ET-XRv" customClass="NewParkingVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewScene" id="iRk-ET-XRv" customClass="NewParkingVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T4L-ix-EBT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,12 +279,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lpk-kX-Jlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881.15942028985512" y="150"/>
+            <point key="canvasLocation" x="929" y="138"/>
+        </scene>
+        <!--Parking ReceiptVC-->
+        <scene sceneID="r9X-80-1G7">
+            <objects>
+                <viewController storyboardIdentifier="ParkingReceiptScene" id="3GJ-FO-rMv" customClass="ParkingReceiptVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0X-vT-GMp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hm0-1u-xCb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q8g-v1-dXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="138"/>
+        </scene>
+        <!--Parking Receipt ListVC-->
+        <scene sceneID="FZU-KF-NRb">
+            <objects>
+                <tableViewController storyboardIdentifier="ParkingReceiptListScene" id="XRq-T6-pdH" customClass="ParkingReceiptListVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ljc-QB-krn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4MD-YO-Ybz">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4MD-YO-Ybz" id="Sua-qW-DaC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XRq-T6-pdH" id="JNn-96-HKF"/>
+                            <outlet property="delegate" destination="XRq-T6-pdH" id="M2j-es-dOD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ap2-Uo-ENR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="806"/>
         </scene>
         <!--Customer SupportVC-->
         <scene sceneID="b1Z-FL-mIV">
             <objects>
-                <viewController id="0xn-NV-PWv" customClass="CustomerSupportVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SupportScene" id="0xn-NV-PWv" customClass="CustomerSupportVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vth-1g-KPQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,13 +342,13 @@
                                 <rect key="frame" x="10" y="57" width="394" height="380"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Via Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNC-A1-cDM">
-                                <rect key="frame" x="10" y="512" width="394" height="29"/>
+                                <rect key="frame" x="10" y="542" width="394" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tK-Yx-dgB">
-                                <rect key="frame" x="10" y="558" width="394" height="41"/>
+                                <rect key="frame" x="10" y="596" width="394" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="GotParkCustomerSupport@park.ca"/>
                                 <connections>
@@ -185,15 +356,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHi-ZP-uEv">
-                                <rect key="frame" x="10" y="675" width="394" height="41"/>
+                                <rect key="frame" x="10" y="751" width="394" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="1 (800) GOT PARK"/>
                                 <connections>
                                     <action selector="supportPhoneClick" destination="0xn-NV-PWv" eventType="touchUpInside" id="igo-sQ-aDz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contract Us Via Phone: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMe-cf-kJc">
-                                <rect key="frame" x="10" y="629" width="394" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Via Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOY-24-ciB">
+                                <rect key="frame" x="10" y="697" width="394" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -202,24 +373,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="mHi-ZP-uEv" secondAttribute="trailing" constant="10" id="4gz-6J-whd"/>
-                            <constraint firstItem="mHi-ZP-uEv" firstAttribute="top" secondItem="XMe-cf-kJc" secondAttribute="bottom" constant="17" id="9dg-qE-Eyk"/>
-                            <constraint firstItem="pNC-A1-cDM" firstAttribute="top" secondItem="q3b-eU-RYa" secondAttribute="bottom" constant="30" id="9md-bn-scT"/>
-                            <constraint firstItem="0tK-Yx-dgB" firstAttribute="top" secondItem="pNC-A1-cDM" secondAttribute="bottom" constant="17" id="Eg3-3b-Y9m"/>
-                            <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="XMe-cf-kJc" secondAttribute="trailing" constant="10" id="GsC-ub-G9b"/>
+                            <constraint firstItem="mHi-ZP-uEv" firstAttribute="top" secondItem="DOY-24-ciB" secondAttribute="bottom" constant="25" id="FXI-GT-8qX"/>
+                            <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="DOY-24-ciB" secondAttribute="trailing" constant="10" id="HPN-uf-MDN"/>
                             <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="0tK-Yx-dgB" secondAttribute="trailing" constant="10" id="J2i-ke-6U4"/>
+                            <constraint firstItem="0tK-Yx-dgB" firstAttribute="top" secondItem="pNC-A1-cDM" secondAttribute="bottom" constant="25" id="Khw-of-G6d"/>
                             <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="q3b-eU-RYa" secondAttribute="trailing" constant="20" id="LS4-xD-FAx"/>
                             <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="pNC-A1-cDM" secondAttribute="trailing" constant="10" id="N64-Pl-6ZX"/>
-                            <constraint firstItem="EqK-ts-hir" firstAttribute="bottom" secondItem="mHi-ZP-uEv" secondAttribute="bottom" constant="146" id="TOQ-Lp-QxF"/>
                             <constraint firstItem="mHi-ZP-uEv" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="Wlf-uO-Hmy"/>
                             <constraint firstItem="pNC-A1-cDM" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="X3C-o8-3Fu"/>
-                            <constraint firstItem="XMe-cf-kJc" firstAttribute="top" secondItem="0tK-Yx-dgB" secondAttribute="bottom" constant="30" id="dT8-Jb-JgP"/>
+                            <constraint firstItem="DOY-24-ciB" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="c7c-t5-BOA"/>
+                            <constraint firstItem="DOY-24-ciB" firstAttribute="top" secondItem="0tK-Yx-dgB" secondAttribute="bottom" constant="60" id="eRX-xl-HKn"/>
+                            <constraint firstItem="pNC-A1-cDM" firstAttribute="top" secondItem="q3b-eU-RYa" secondAttribute="bottom" constant="60" id="fQ4-xt-Pti"/>
                             <constraint firstItem="q3b-eU-RYa" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="20" id="hl7-C7-KSD"/>
                             <constraint firstItem="EqK-ts-hir" firstAttribute="trailing" secondItem="8Lm-mX-34h" secondAttribute="trailing" constant="10" id="hsU-t0-SRx"/>
                             <constraint firstItem="q3b-eU-RYa" firstAttribute="top" secondItem="8Lm-mX-34h" secondAttribute="bottom" constant="8" symbolic="YES" id="itQ-EM-XcQ"/>
                             <constraint firstItem="8Lm-mX-34h" firstAttribute="top" secondItem="EqK-ts-hir" secondAttribute="top" constant="13" id="noN-kr-LAQ"/>
                             <constraint firstItem="8Lm-mX-34h" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="npP-PY-1oK"/>
                             <constraint firstItem="0tK-Yx-dgB" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="t8k-sW-isb"/>
-                            <constraint firstItem="XMe-cf-kJc" firstAttribute="leading" secondItem="EqK-ts-hir" secondAttribute="leading" constant="10" id="uqn-EI-qMs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EqK-ts-hir"/>
                     </view>
@@ -228,36 +398,56 @@
             </objects>
             <point key="canvasLocation" x="121.73913043478262" y="817.63392857142856"/>
         </scene>
+        <!--Locate Nearby ParkingVC-->
+        <scene sceneID="en8-fn-ou6">
+            <objects>
+                <viewController storyboardIdentifier="NearbyScene" id="w4K-1V-tUW" customClass="LocateNearbyParkingVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pq2-fj-0mf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ml7-IE-dmq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ml7-IE-dmq" firstAttribute="top" secondItem="LM9-Rt-hdZ" secondAttribute="top" id="0AE-YO-X7b"/>
+                            <constraint firstItem="LM9-Rt-hdZ" firstAttribute="trailing" secondItem="Ml7-IE-dmq" secondAttribute="trailing" id="MDq-NT-m7M"/>
+                            <constraint firstItem="LM9-Rt-hdZ" firstAttribute="bottom" secondItem="Ml7-IE-dmq" secondAttribute="bottom" id="bik-HR-jF2"/>
+                            <constraint firstItem="Ml7-IE-dmq" firstAttribute="leading" secondItem="LM9-Rt-hdZ" secondAttribute="leading" id="f4d-C8-2FO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LM9-Rt-hdZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="parkingMap" destination="Ml7-IE-dmq" id="zmL-oh-eM4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ve0-Lx-6EH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="809"/>
+        </scene>
         <!--App ManualVC-->
         <scene sceneID="7rM-vF-Ci0">
             <objects>
-                <viewController id="F0B-Wg-JJz" customClass="AppManualVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ManualScene" id="F0B-Wg-JJz" customClass="AppManualVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n3m-96-Pit">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqf-Gk-8fP">
-                                <rect key="frame" x="0.0" y="180" width="414" height="662"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YSA-oj-r0F">
-                                <rect key="frame" x="0.0" y="44" width="414" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="blY-2k-mlT"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="YSA-oj-r0F" firstAttribute="top" secondItem="LlN-BK-rTj" secondAttribute="top" id="Vbb-qi-3rY"/>
-                            <constraint firstItem="zqf-Gk-8fP" firstAttribute="top" secondItem="YSA-oj-r0F" secondAttribute="bottom" constant="8" symbolic="YES" id="Yhm-LD-eze"/>
                             <constraint firstItem="LlN-BK-rTj" firstAttribute="bottom" secondItem="zqf-Gk-8fP" secondAttribute="bottom" constant="20" id="aRi-5k-IF5"/>
-                            <constraint firstItem="LlN-BK-rTj" firstAttribute="trailing" secondItem="YSA-oj-r0F" secondAttribute="trailing" id="b6W-fn-DcE"/>
-                            <constraint firstItem="YSA-oj-r0F" firstAttribute="leading" secondItem="LlN-BK-rTj" secondAttribute="leading" id="nsL-tP-oDy"/>
+                            <constraint firstItem="zqf-Gk-8fP" firstAttribute="top" secondItem="LlN-BK-rTj" secondAttribute="top" id="gVq-6j-lhn"/>
                             <constraint firstItem="LlN-BK-rTj" firstAttribute="trailing" secondItem="zqf-Gk-8fP" secondAttribute="trailing" id="x5e-y2-UL6"/>
                             <constraint firstItem="zqf-Gk-8fP" firstAttribute="leading" secondItem="LlN-BK-rTj" secondAttribute="leading" id="zYW-kD-bbu"/>
                         </constraints>
@@ -269,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Voz-RW-B5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-726.08695652173924" y="817.63392857142856"/>
+            <point key="canvasLocation" x="-794" y="818"/>
         </scene>
     </scenes>
     <resources>

@@ -7,16 +7,37 @@
 //
 
 import UIKit
+import MapKit
 
 class LocateNearbyParkingVC: UIViewController {
+    
+    var locationManager = CLLocationManager()
+    let regionRadius: CLLocationDistance = 3000
+    @IBOutlet var parkingMap: MKMapView!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        parkingMap.mapType = MKMapType.satellite
+        parkingMap.isZoomEnabled = true
+        parkingMap.isScrollEnabled = true
+        parkingMap.isUserInteractionEnabled = true
+        
+        //set location manager properties
+        locationManager.delegate = self as? CLLocationManagerDelegate
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        
+        //start getting location updates
+        if (CLLocationManager.locationServicesEnabled()){
+            locationManager.startUpdatingLocation()
+        }
 
-        // Do any additional setup after loading the view.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
