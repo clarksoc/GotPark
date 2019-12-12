@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6397E80823A2ED6D0062E531 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397E80723A2ED6D0062E531 /* UserController.swift */; };
+		6397E80A23A2ED7F0062E531 /* CreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397E80923A2ED7F0062E531 /* CreditCardController.swift */; };
+		6397E80C23A2ED930062E531 /* RecieptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397E80B23A2ED930062E531 /* RecieptController.swift */; };
 		720D852A2389BC8B00013B6B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85292389BC8B00013B6B /* SignUpVC.swift */; };
 		720D852C2389BC9A00013B6B /* LocateNearbyParkingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D852B2389BC9A00013B6B /* LocateNearbyParkingVC.swift */; };
 		720D85302389BCB700013B6B /* NewParkingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D852F2389BCB700013B6B /* NewParkingVC.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6397E80723A2ED6D0062E531 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		6397E80923A2ED7F0062E531 /* CreditCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardController.swift; sourceTree = "<group>"; };
+		6397E80B23A2ED930062E531 /* RecieptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieptController.swift; sourceTree = "<group>"; };
 		720D85292389BC8B00013B6B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		720D852B2389BC9A00013B6B /* LocateNearbyParkingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateNearbyParkingVC.swift; sourceTree = "<group>"; };
 		720D852F2389BCB700013B6B /* NewParkingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewParkingVC.swift; sourceTree = "<group>"; };
@@ -62,6 +68,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6397E80623A2ED560062E531 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				6397E80723A2ED6D0062E531 /* UserController.swift */,
+				6397E80923A2ED7F0062E531 /* CreditCardController.swift */,
+				6397E80B23A2ED930062E531 /* RecieptController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		9212C01A2389B65E00B9042D = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +98,13 @@
 		9212C0252389B65E00B9042D /* GotPark */ = {
 			isa = PBXGroup;
 			children = (
+				6397E80623A2ED560062E531 /* controller */,
 				924225E62389CE130001582C /* HTML */,
-				9212C03F2389B70B00B9042D /* controller */,
 				9212C03E2389B70400B9042D /* view */,
 				9212C03D2389B6F700B9042D /* model */,
 				9212C0262389B65E00B9042D /* AppDelegate.swift */,
 				9212C0282389B65E00B9042D /* SceneDelegate.swift */,
+				720D85292389BC8B00013B6B /* SignUpVC.swift */,
 				9212C02A2389B65E00B9042D /* ViewController.swift */,
 				9212C02C2389B65E00B9042D /* Main.storyboard */,
 				924225E22389C16D0001582C /* CustomerSupportImage.png */,
@@ -110,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				924225DE2389BAF80001582C /* CustomerSupportVC.swift */,
-				720D85292389BC8B00013B6B /* SignUpVC.swift */,
 				720D852B2389BC9A00013B6B /* LocateNearbyParkingVC.swift */,
 				720D852F2389BCB700013B6B /* NewParkingVC.swift */,
 				720D85312389BCC100013B6B /* ParkingReceiptVC.swift */,
@@ -120,13 +136,6 @@
 				924225E42389CDF90001582C /* AppManualVC.swift */,
 			);
 			path = view;
-			sourceTree = "<group>";
-		};
-		9212C03F2389B70B00B9042D /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
 			sourceTree = "<group>";
 		};
 		924225E62389CE130001582C /* HTML */ = {
@@ -212,12 +221,15 @@
 			files = (
 				720D852A2389BC8B00013B6B /* SignUpVC.swift in Sources */,
 				720D85302389BCB700013B6B /* NewParkingVC.swift in Sources */,
+				6397E80C23A2ED930062E531 /* RecieptController.swift in Sources */,
 				720D853A2389BFC000013B6B /* SignInVC.swift in Sources */,
 				9212C0312389B65E00B9042D /* GotPark.xcdatamodeld in Sources */,
+				6397E80823A2ED6D0062E531 /* UserController.swift in Sources */,
 				9212C02B2389B65E00B9042D /* ViewController.swift in Sources */,
 				720D85342389BCD900013B6B /* ParkingReceiptListVC.swift in Sources */,
 				720D85322389BCC100013B6B /* ParkingReceiptVC.swift in Sources */,
 				720D852C2389BC9A00013B6B /* LocateNearbyParkingVC.swift in Sources */,
+				6397E80A23A2ED7F0062E531 /* CreditCardController.swift in Sources */,
 				9212C0272389B65E00B9042D /* AppDelegate.swift in Sources */,
 				720D85362389BCF500013B6B /* HomeVC.swift in Sources */,
 				924225DF2389BAF80001582C /* CustomerSupportVC.swift in Sources */,
