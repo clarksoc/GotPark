@@ -19,6 +19,7 @@
 		720D85342389BCD900013B6B /* ParkingReceiptListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85332389BCD900013B6B /* ParkingReceiptListVC.swift */; };
 		720D85362389BCF500013B6B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85352389BCF500013B6B /* HomeVC.swift */; };
 		720D853A2389BFC000013B6B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85392389BFC000013B6B /* SignInVC.swift */; };
+		723F4C6E23A401610074E5C1 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F4C6D23A401610074E5C1 /* Receipt.swift */; };
 		9212C0272389B65E00B9042D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212C0262389B65E00B9042D /* AppDelegate.swift */; };
 		9212C0292389B65E00B9042D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212C0282389B65E00B9042D /* SceneDelegate.swift */; };
 		9212C02B2389B65E00B9042D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212C02A2389B65E00B9042D /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		720D85332389BCD900013B6B /* ParkingReceiptListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingReceiptListVC.swift; sourceTree = "<group>"; };
 		720D85352389BCF500013B6B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		720D85392389BFC000013B6B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		723F4C6D23A401610074E5C1 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 		9212C0232389B65E00B9042D /* GotPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GotPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9212C0262389B65E00B9042D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9212C0282389B65E00B9042D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				6397E80D23A32FAB0062E531 /* User.swift */,
 				6397E80F23A338D60062E531 /* CreditCard.swift */,
+				723F4C6D23A401610074E5C1 /* Receipt.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				9212C0272389B65E00B9042D /* AppDelegate.swift in Sources */,
 				720D85362389BCF500013B6B /* HomeVC.swift in Sources */,
 				924225DF2389BAF80001582C /* CustomerSupportVC.swift in Sources */,
+				723F4C6E23A401610074E5C1 /* Receipt.swift in Sources */,
 				9212C0292389B65E00B9042D /* SceneDelegate.swift in Sources */,
 				924225E52389CDF90001582C /* AppManualVC.swift in Sources */,
 			);

@@ -2,9 +2,9 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ParkingEntity" representedClassName="ParkingEntity" syncable="YES" codeGenerationType="class">
         <attribute name="buildingCode" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="parkCost" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="parkCost" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="parkPlate" optional="YES" attributeType="String"/>
         <attribute name="suiteNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
@@ -24,7 +24,7 @@
         <attribute name="phoneNumber" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="ParkingEntity" positionX="-36" positionY="81" width="128" height="133"/>
+        <element name="ParkingEntity" positionX="-36" positionY="81" width="128" height="28"/>
         <element name="PaymentEntity" positionX="-36" positionY="90" width="128" height="118"/>
         <element name="UserEntity" positionX="-63" positionY="-18" width="128" height="133"/>
     </elements>
