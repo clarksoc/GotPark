@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cDH-sY-mzs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7bg-Ws-3Ja">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -16,52 +16,52 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9DS-No-fte"/>
+                        <segue destination="cDH-sY-mzs" kind="relationship" relationship="rootViewController" id="GSm-Ha-mW4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76A-Sq-roJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-793" y="138"/>
+            <point key="canvasLocation" x="-794" y="-606"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="kYg-li-vvR">
             <objects>
-                <viewController storyboardIdentifier="SignInVC" id="cDH-sY-mzs" customClass="SignInVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInScene" id="cDH-sY-mzs" customClass="SignInVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IDc-eJ-LtK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name@email.ca" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iA1-g0-W5m">
-                                <rect key="frame" x="20" y="105" width="374" height="34"/>
+                                <rect key="frame" x="20" y="149" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1234" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMW-Jg-qdB">
-                                <rect key="frame" x="20" y="200" width="374" height="34"/>
+                                <rect key="frame" x="20" y="244" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1R-Ce-6NT">
-                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <rect key="frame" x="20" y="108" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrN-aY-Y9u">
-                                <rect key="frame" x="20" y="159" width="374" height="21"/>
+                                <rect key="frame" x="20" y="203" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub1-30-prz">
-                                <rect key="frame" x="78" y="254" width="54" height="30"/>
+                                <rect key="frame" x="78" y="298" width="54" height="30"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <action selector="btnSignUp:" destination="cDH-sY-mzs" eventType="touchUpInside" id="cOn-Zu-MBi"/>
+                                    <action selector="btnSignUp:" destination="cDH-sY-mzs" eventType="touchUpInside" id="y3A-6q-6xL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26u-l5-HAz">
-                                <rect key="frame" x="20" y="254" width="38" height="30"/>
+                                <rect key="frame" x="20" y="298" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="btnLogin:" destination="cDH-sY-mzs" eventType="touchUpInside" id="shB-1u-pDi"/>
@@ -90,6 +90,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HfB-1e-eCl"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VOQ-gG-fAk"/>
                     <connections>
                         <outlet property="txtEmail" destination="iA1-g0-W5m" id="Pij-z1-lxX"/>
                         <outlet property="txtPassword" destination="qMW-Jg-qdB" id="DhA-lt-CTh"/>
@@ -102,7 +103,7 @@
         <!--Sign UpVC-->
         <scene sceneID="cct-zc-4zo">
             <objects>
-                <viewController storyboardIdentifier="SignUpScene" id="vjQ-5s-caI" customClass="SignUpVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpScene" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vjQ-5s-caI" customClass="SignUpVC" customModule="GotPark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EKh-yS-UWA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +225,7 @@
                                 <rect key="frame" x="20" y="824" width="50" height="30"/>
                                 <state key="normal" title="SignUp"/>
                                 <connections>
-                                    <action selector="btnSignUp:" destination="vjQ-5s-caI" eventType="touchUpInside" id="qtF-Jc-8xY"/>
+                                    <action selector="btnSignUp:" destination="vjQ-5s-caI" eventType="touchUpInside" id="5X9-Uz-DX4"/>
                                     <action selector="test:" destination="Wvv-1w-bGT" eventType="touchUpInside" id="Mmj-yr-SlA"/>
                                 </connections>
                             </button>
@@ -296,16 +297,16 @@
                         <viewLayoutGuide key="safeArea" id="r00-AZ-OOq"/>
                     </view>
                     <connections>
-                        <outlet property="txtCVV" destination="SJZ-Ts-YXQ" id="2H8-8J-u7P"/>
-                        <outlet property="txtCarPlate" destination="4ec-MC-T1K" id="9nt-Xx-gZ0"/>
-                        <outlet property="txtCardName" destination="FGZ-bQ-Jvm" id="pRU-cY-W6n"/>
-                        <outlet property="txtCreditCard" destination="RB9-qi-1D9" id="Z0u-nr-TGd"/>
-                        <outlet property="txtEmail" destination="wXM-oR-IjY" id="eg6-1I-w0j"/>
-                        <outlet property="txtExpiry" destination="a11-Ep-n7V" id="vaY-LD-pur"/>
-                        <outlet property="txtFirstName" destination="QbT-D7-UgX" id="jIP-Yn-UeO"/>
-                        <outlet property="txtLastName" destination="8l3-ry-cwI" id="8x6-XT-WOI"/>
-                        <outlet property="txtPassword" destination="gkx-8k-deu" id="0Dp-lO-GzA"/>
-                        <outlet property="txtPhoneNumber" destination="Acf-rK-hou" id="kA2-gi-4W3"/>
+                        <outlet property="txtCVV" destination="SJZ-Ts-YXQ" id="3mc-mV-08n"/>
+                        <outlet property="txtCarPlate" destination="4ec-MC-T1K" id="fcz-on-aGe"/>
+                        <outlet property="txtCardName" destination="FGZ-bQ-Jvm" id="qEY-2k-UOQ"/>
+                        <outlet property="txtCreditCard" destination="RB9-qi-1D9" id="VcP-Nw-M8z"/>
+                        <outlet property="txtEmail" destination="wXM-oR-IjY" id="lCb-Ej-MBO"/>
+                        <outlet property="txtExpiry" destination="a11-Ep-n7V" id="uSw-ti-cIV"/>
+                        <outlet property="txtFirstName" destination="QbT-D7-UgX" id="evP-y2-MT8"/>
+                        <outlet property="txtLastName" destination="8l3-ry-cwI" id="h9Z-cd-zC3"/>
+                        <outlet property="txtPassword" destination="gkx-8k-deu" id="FrI-ks-Vym"/>
+                        <outlet property="txtPhoneNumber" destination="Acf-rK-hou" id="SuS-21-dtq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efh-9S-HwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -322,57 +323,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Got Park" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiC-A0-F0O">
-                                <rect key="frame" x="20" y="88" width="374" height="60"/>
+                                <rect key="frame" x="20" y="44" width="374" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJw-zp-CnJ">
-                                <rect key="frame" x="20" y="243" width="374" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="255" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJw-zp-CnJ">
+                                <rect key="frame" x="20" y="199" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add Parking"/>
                                 <connections>
                                     <action selector="addClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="juB-bT-vHH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13e-zk-1Le">
-                                <rect key="frame" x="20" y="309" width="374" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13e-zk-1Le">
+                                <rect key="frame" x="20" y="265" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="View Parking Receipt"/>
                                 <connections>
                                     <action selector="viewReceiptClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85d-Uv-mUf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3A7-yE-ZrO">
-                                <rect key="frame" x="20" y="375" width="374" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3A7-yE-ZrO">
+                                <rect key="frame" x="20" y="331" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="View Parking Receipt List"/>
                                 <connections>
                                     <action selector="viewReceiptList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q29-i4-fLN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0A-Lk-su7">
-                                <rect key="frame" x="20" y="441" width="374" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="254" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0A-Lk-su7">
+                                <rect key="frame" x="20" y="397" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Search Nearby Parking"/>
                                 <connections>
                                     <action selector="nearbyClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uuv-eI-QlQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpJ-fc-rpX">
-                                <rect key="frame" x="20" y="507" width="374" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="254" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpJ-fc-rpX">
+                                <rect key="frame" x="20" y="463" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Update User Profile"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7u-eS-xNv">
-                                <rect key="frame" x="20" y="573" width="374" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7u-eS-xNv">
+                                <rect key="frame" x="20" y="529" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Got Park User Manual"/>
                                 <connections>
                                     <action selector="manualClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFP-Ag-Ovn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqj-4b-LwI">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqj-4b-LwI">
                                 <rect key="frame" x="20" y="770" width="374" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Sign Out">
@@ -383,7 +384,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npq-jf-bIX">
-                                <rect key="frame" x="20" y="639" width="374" height="36"/>
+                                <rect key="frame" x="20" y="595" width="374" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Contact Us"/>
                                 <connections>
