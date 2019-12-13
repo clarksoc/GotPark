@@ -24,7 +24,7 @@ class SignInVC: UIViewController {
         let pw = txtPassword.text ?? ""
         do {
         let regexEmail = try NSRegularExpression(pattern: "[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]", options: [])
-            if(em.count == 0 || pw.count == 0 || !userController.validateUser(email: em, password: pw) || regexEmail.firstMatch(in: em, options: [], range: NSMakeRange(0, em.utf16.count)) != nil) {
+            if(em.count == 0 || pw.count == 0 || !userController.validateUser(email: em, password: pw) || regexEmail.firstMatch(in: em, options: [], range: NSMakeRange(0, em.utf16.count)) == nil) {
                 showAlert(attempt: false)
             } else {
                 let homeVC = mainSB.instantiateViewController(withIdentifier: "HomeScene") as! HomeVC
@@ -38,10 +38,10 @@ class SignInVC: UIViewController {
         var msg : String = ""
         do {
         let regexEmail = try NSRegularExpression(pattern: "[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]", options: [])
-        msg += (txtEmail.text ?? "").count == 0 ? "Email Cannot Be Empty" : ""
-        msg += regexEmail.firstMatch(in: (txtEmail.text ?? ""), options: [], range: NSMakeRange(0, (txtEmail.text ?? "").utf16.count)) != nil ? "Email Must Orient in Email Format" : ""
-        msg += (txtPassword.text ?? "").count == 0 ? "Password Cannot Be Empty" : ""
-        msg += !userController.validateUser(email: (txtEmail.text ?? ""), password: (txtPassword.text ?? "")) ? "Email and/or Password Incorrect" : ""
+        msg += (txtEmail.text ?? "").count == 0 ? "Email Cannot Be Empty\n" : ""
+        msg += regexEmail.firstMatch(in: (txtEmail.text ?? ""), options: [], range: NSMakeRange(0, (txtEmail.text ?? "").utf16.count)) == nil ? "Email Must Orient in Email Format\n" : ""
+        msg += (txtPassword.text ?? "").count == 0 ? "Password Cannot Be Empty\n" : ""
+        msg += !userController.validateUser(email: (txtEmail.text ?? ""), password: (txtPassword.text ?? "")) ? "Email and/or Password Incorrect\n" : ""
         }catch{}
         let alertController = UIAlertController(title: "Login Attempt", message: msg, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
