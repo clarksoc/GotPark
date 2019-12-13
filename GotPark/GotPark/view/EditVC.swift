@@ -1,18 +1,17 @@
 //
-//  SignUpVC.swift
+//  EditVC.swift
 //  GotPark
 //
-//  Created by Richard Perocho on 2019-11-23.
+//  Created by Adrian Gonzalez Madruga on 2019-12-13.
 //  Copyright © 2019 Connor Clarkson. All rights reserved.
 //
 
+import Foundation
 import UIKit
-
-class SignUpVC: UIViewController {
+class EditVC: UIViewController {
 
     @IBOutlet weak var txtFirstName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
-    @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtPhoneNumber: UITextField!
     @IBOutlet weak var txtCarPlate: UITextField!
@@ -25,10 +24,21 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let user = userController.getSelectedUser(email: HomeVC.email)!
+        let creditCard = creditCardController.getSelectedCreditCard(email: HomeVC.email)!
+        txtFirstName.text = user.firstName
+        txtLastName.text = user.lastName
+        txtPassword.text = user.password
+        txtPhoneNumber.text = user.phoneNumber
+        txtCarPlate.text = user.carPlate
+        txtCreditCard.text = creditCard.creditCard
+        txtExpiry.text = creditCard.expiryDate
+        txtCVV.text = creditCard.cvv
+        txtCardName.text = creditCard.cardName
+        
     }
 
-    @IBAction func btnSignUp(_ sender: Any) {
-        let em = txtEmail.text ?? ""
+    @IBAction func btnEdit(_ sender: Any) {
         let pw = txtPassword.text ?? ""
         let fn = txtFirstName.text ?? ""
         let ln = txtLastName.text ?? ""
@@ -38,26 +48,21 @@ class SignUpVC: UIViewController {
         let ex = txtExpiry.text ?? ""
         let cvv = txtCVV.text ?? ""
         let cn = txtCardName.text ?? ""
-        let user = userController.getSelectedUser(email: em)
-        if user != nil || em.count == 0 || pw.count == 0 || fn.count == 0 || ln.count == 0 || pn.count == 0 || cp.count == 0 || cc.count == 0 || ex.count == 0 || cvv.count == 0 || cn.count == 0 {
+        if  pw.count == 0 || fn.count == 0 || ln.count == 0 || pn.count == 0 || cp.count == 0 || cc.count == 0 || ex.count == 0 || cvv.count == 0 || cn.count == 0 {
             showAlert(attempt: false)
         } else {
-            let user = User(firstName: fn, lastName: ln, email: em, password: pw, phoneNumber: pn, carPlate: cp)
-            let creditCard = CreditCard(email: em, creditCard: cc, expiryDate: ex, cvv: cvv, cardName: cn)
-            userController.insertUser(newUser: user)
-            creditCardController.insertCreditCard(newCreditCard: creditCard)
+            let user = User(firstName: fn, lastName: ln, email: HomeVC.email, password: pw, phoneNumber: pn, carPlate: cp)
+            let creditCard = CreditCard(email: HomeVC.email, creditCard: cc, expiryDate: ex, cvv: cvv, cardName: cn)
+            userController.updateUser(user: user, oldEmail: HomeVC.email)
+            creditCardController.updateCreditCard(creditCard: creditCard, oldEmail: HomeVC.email)
             let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let homeVC = mainSB.instantiateViewController(withIdentifier: "HomeScene") as! HomeVC
-            HomeVC.email = em
             navigationController?.pushViewController(homeVC, animated: true)
         }
     }
     
     func showAlert(attempt: Bool){
         var msg : String = ""
-        let user = userController.getSelectedUser(email: (txtEmail.text ?? ""))
-        msg += user != nil ? "Email already used" : ""
-        msg += (txtEmail.text ?? "").count == 0 ? "Email Cannot Be Empty" : ""
         msg += (txtPassword.text ?? "").count == 0 ? "Password Cannot Be Empty" : ""
         msg += (txtFirstName.text ?? "").count == 0 ? "First Name Cannot Be Empty" : ""
         msg += (txtLastName.text ?? "").count == 0 ? "Last Name Cannot Be Empty" : ""

@@ -12,8 +12,8 @@ class SignInVC: UIViewController {
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
-    let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let userController = UserController()
+    let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated:true);
@@ -25,9 +25,8 @@ class SignInVC: UIViewController {
         if(em.count == 0 || pw.count == 0 || !userController.validateUser(email: em, password: pw)) {
             showAlert(attempt: false)
         } else {
-            let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let homeVC = mainSB.instantiateViewController(withIdentifier: "HomeScene") as! HomeVC
-            HomeVC.user = userController.getSelectedUser(email: em)!
+            HomeVC.email = em
             navigationController?.pushViewController(homeVC, animated: true)
         }
     }
