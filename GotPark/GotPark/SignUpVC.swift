@@ -10,6 +10,17 @@ import UIKit
 
 class SignUpVC: UIViewController {
 
+    
+    @IBOutlet weak var txtFirstName: UITextField!
+    @IBOutlet weak var txtLastName: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtPhoneNumber: UITextField!
+    @IBOutlet weak var txtCarPlate: UITextField!
+    @IBOutlet weak var txtCreditCard: UITextField!
+    @IBOutlet weak var txtExpiry: UITextField!
+    @IBOutlet weak var txtCVV: UITextField!
+    @IBOutlet weak var txtCardName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 

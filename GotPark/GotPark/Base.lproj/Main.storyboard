@@ -56,6 +56,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub1-30-prz">
                                 <rect key="frame" x="20" y="254" width="64" height="30"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="btnSignUp:" destination="cDH-sY-mzs" eventType="touchUpInside" id="cOn-Zu-MBi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -78,6 +81,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HfB-1e-eCl"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmal" destination="iA1-g0-W5m" id="Xjc-oK-uhw"/>
+                        <outlet property="txtPassword" destination="qMW-Jg-qdB" id="DhA-lt-CTh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UEC-nG-9qp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,6 +275,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r00-AZ-OOq"/>
                     </view>
+                    <connections>
+                        <outlet property="lblFirstName" destination="QbT-D7-UgX" id="TS4-fb-C6h"/>
+                        <outlet property="txtCVV" destination="SJZ-Ts-YXQ" id="2H8-8J-u7P"/>
+                        <outlet property="txtCarPlate" destination="4ec-MC-T1K" id="9nt-Xx-gZ0"/>
+                        <outlet property="txtCardName" destination="FGZ-bQ-Jvm" id="pRU-cY-W6n"/>
+                        <outlet property="txtCreditCard" destination="RB9-qi-1D9" id="Z0u-nr-TGd"/>
+                        <outlet property="txtEmail" destination="wXM-oR-IjY" id="eg6-1I-w0j"/>
+                        <outlet property="txtExpiry" destination="a11-Ep-n7V" id="vaY-LD-pur"/>
+                        <outlet property="txtFirstName" destination="QbT-D7-UgX" id="jIP-Yn-UeO"/>
+                        <outlet property="txtLastName" destination="8l3-ry-cwI" id="8x6-XT-WOI"/>
+                        <outlet property="txtPassword" destination="gkx-8k-deu" id="0Dp-lO-GzA"/>
+                        <outlet property="txtPhoneNumber" destination="Acf-rK-hou" id="kA2-gi-4W3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efh-9S-HwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

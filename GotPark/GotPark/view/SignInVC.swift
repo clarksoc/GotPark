@@ -10,13 +10,18 @@ import UIKit
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var txtEmal: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btnSignUp(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
