@@ -54,30 +54,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub1-30-prz">
-                                <rect key="frame" x="20" y="254" width="64" height="30"/>
+                                <rect key="frame" x="78" y="254" width="54" height="30"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="btnSignUp:" destination="cDH-sY-mzs" eventType="touchUpInside" id="cOn-Zu-MBi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26u-l5-HAz">
+                                <rect key="frame" x="20" y="254" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="btnLogin:" destination="cDH-sY-mzs" eventType="touchUpInside" id="shB-1u-pDi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="HfB-1e-eCl" firstAttribute="trailing" secondItem="Ub1-30-prz" secondAttribute="trailing" constant="282" id="2gU-gT-ybZ"/>
                             <constraint firstItem="HfB-1e-eCl" firstAttribute="trailing" secondItem="iA1-g0-W5m" secondAttribute="trailing" constant="20" id="7fH-Ac-lUN"/>
                             <constraint firstItem="yrN-aY-Y9u" firstAttribute="top" secondItem="iA1-g0-W5m" secondAttribute="bottom" constant="20" id="8LN-0S-6lT"/>
                             <constraint firstItem="HfB-1e-eCl" firstAttribute="trailing" secondItem="yrN-aY-Y9u" secondAttribute="trailing" constant="20" id="Ba0-i0-HMw"/>
+                            <constraint firstItem="26u-l5-HAz" firstAttribute="top" secondItem="qMW-Jg-qdB" secondAttribute="bottom" constant="20" id="D67-uU-g0G"/>
                             <constraint firstItem="X1R-Ce-6NT" firstAttribute="leading" secondItem="HfB-1e-eCl" secondAttribute="leading" constant="20" id="DSb-xw-iyG"/>
                             <constraint firstItem="qMW-Jg-qdB" firstAttribute="leading" secondItem="HfB-1e-eCl" secondAttribute="leading" constant="20" id="JQK-Yh-FaR"/>
                             <constraint firstItem="iA1-g0-W5m" firstAttribute="top" secondItem="X1R-Ce-6NT" secondAttribute="bottom" constant="20" id="NIZ-ei-5CX"/>
-                            <constraint firstItem="Ub1-30-prz" firstAttribute="top" secondItem="qMW-Jg-qdB" secondAttribute="bottom" constant="20" id="Q9Q-29-L9B"/>
                             <constraint firstItem="qMW-Jg-qdB" firstAttribute="top" secondItem="yrN-aY-Y9u" secondAttribute="bottom" constant="20" id="QWT-0H-onm"/>
                             <constraint firstItem="HfB-1e-eCl" firstAttribute="trailing" secondItem="qMW-Jg-qdB" secondAttribute="trailing" constant="20" id="YqJ-0f-ylV"/>
                             <constraint firstItem="HfB-1e-eCl" firstAttribute="trailing" secondItem="X1R-Ce-6NT" secondAttribute="trailing" constant="20" id="bBC-dy-f0t"/>
                             <constraint firstItem="iA1-g0-W5m" firstAttribute="leading" secondItem="HfB-1e-eCl" secondAttribute="leading" constant="20" id="dAS-vO-tAf"/>
-                            <constraint firstItem="Ub1-30-prz" firstAttribute="leading" secondItem="HfB-1e-eCl" secondAttribute="leading" constant="20" id="dQo-LJ-iEZ"/>
+                            <constraint firstItem="Ub1-30-prz" firstAttribute="leading" secondItem="26u-l5-HAz" secondAttribute="trailing" constant="20" id="djZ-j4-k0c"/>
+                            <constraint firstItem="Ub1-30-prz" firstAttribute="top" secondItem="qMW-Jg-qdB" secondAttribute="bottom" constant="20" id="e0a-RV-G5w"/>
                             <constraint firstItem="yrN-aY-Y9u" firstAttribute="leading" secondItem="HfB-1e-eCl" secondAttribute="leading" constant="20" id="gy8-Wx-kWT"/>
+                            <constraint firstItem="26u-l5-HAz" firstAttribute="leading" secondItem="HfB-1e-eCl" secondAttribute="leading" constant="20" id="h9B-Tj-zQG"/>
                             <constraint firstItem="X1R-Ce-6NT" firstAttribute="top" secondItem="HfB-1e-eCl" secondAttribute="top" constant="20" id="hIF-B0-o6R"/>
-                            <constraint firstItem="HfB-1e-eCl" firstAttribute="trailing" secondItem="Ub1-30-prz" secondAttribute="trailing" constant="330" id="hrh-fs-SNU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HfB-1e-eCl"/>
                     </view>
