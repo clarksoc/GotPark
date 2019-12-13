@@ -36,16 +36,17 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         
         if (plateNumber == userController.getSelectedUser(email: HomeVC.email)!.carPlate) {
             let receipt = Receipt(buildingCode: buildingCode, date: Date(), duration: selectedHours, parkingCost: parkingAmount, parkingPlate: plateNumber, suiteNumber: hostSuite)
+            
             receiptController.insertReceipt(newReceipt: receipt)
             
             let sbMain: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let receiptVC = sbMain.instantiateViewController(identifier: "ParkingReceiptScene") as! ParkingReceiptVC
-            receiptVC.buildingCode = buildingCode
-            receiptVC.date = Date()
-            receiptVC.duration = selectedHours
-            receiptVC.parkingCost = parkingAmount
-            receiptVC.parkPlate = plateNumber
-            receiptVC.suiteNum = hostSuite
+//            receiptVC.buildingCode = buildingCode
+//            receiptVC.date = Date()
+//            receiptVC.duration = selectedHours
+//            receiptVC.parkingCost = parkingAmount
+//            receiptVC.parkPlate = plateNumber
+//            receiptVC.suiteNum = hostSuite
             navigationController?.pushViewController(receiptVC, animated: true)
         }
     }
