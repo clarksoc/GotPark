@@ -23,6 +23,7 @@
 		720D853A2389BFC000013B6B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85392389BFC000013B6B /* SignInVC.swift */; };
 		723F4C6E23A401610074E5C1 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F4C6D23A401610074E5C1 /* Receipt.swift */; };
 		723F4C7423A40F020074E5C1 /* GotPark2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 723F4C7223A40F020074E5C1 /* GotPark2.xcdatamodeld */; };
+		9203E2E623A42DD9002C4206 /* ParkingDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9203E2E523A42DD9002C4206 /* ParkingDetailVC.swift */; };
 		9212C0272389B65E00B9042D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212C0262389B65E00B9042D /* AppDelegate.swift */; };
 		9212C0292389B65E00B9042D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212C0282389B65E00B9042D /* SceneDelegate.swift */; };
 		9212C02B2389B65E00B9042D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212C02A2389B65E00B9042D /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		720D85392389BFC000013B6B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		723F4C6D23A401610074E5C1 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 		723F4C7323A40F020074E5C1 /* GotPark2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GotPark2.xcdatamodel; sourceTree = "<group>"; };
+		9203E2E523A42DD9002C4206 /* ParkingDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailVC.swift; sourceTree = "<group>"; };
 		9212C0232389B65E00B9042D /* GotPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GotPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9212C0262389B65E00B9042D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9212C0282389B65E00B9042D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				720D85392389BFC000013B6B /* SignInVC.swift */,
 				924225E42389CDF90001582C /* AppManualVC.swift */,
 				63F7B99023A3F93500DAC69E /* EditVC.swift */,
+				9203E2E523A42DD9002C4206 /* ParkingDetailVC.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				720D853A2389BFC000013B6B /* SignInVC.swift in Sources */,
 				6397E80823A2ED6D0062E531 /* UserController.swift in Sources */,
 				63F7B99123A3F93500DAC69E /* EditVC.swift in Sources */,
+				9203E2E623A42DD9002C4206 /* ParkingDetailVC.swift in Sources */,
 				9212C02B2389B65E00B9042D /* ViewController.swift in Sources */,
 				6397E80E23A32FAB0062E531 /* User.swift in Sources */,
 				720D85342389BCD900013B6B /* ParkingReceiptListVC.swift in Sources */,

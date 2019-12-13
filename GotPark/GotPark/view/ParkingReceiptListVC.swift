@@ -60,5 +60,33 @@ class ParkingReceiptListVC: UITableViewController {
         
         return cell
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.row < receiptList.count
+        {
+            let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let detailVC = mainSB.instantiateViewController(withIdentifier: "DetailReceiptScene") as! ParkingDetailVC
+            
+            let receipt = receiptList[indexPath.row]
+            detailVC.buildingCode = receipt.buildingCode
+            detailVC.duration = receipt.duration
+            detailVC.date = receipt.date
+            detailVC.parkingCost = receipt.parkingCost
+            detailVC.parkPlate = receipt.parkingPlate
+            detailVC.suiteNum = receipt.suiteNumber
+            
+//            detailVC.buildingCode = self.receiptList[indexPath.row].code
+//            detailVC.duration = self.receiptList[indexPath.row].duration
+//            detailVC.parkingCost = self.receiptList[indexPath.row].parkingCost
+//            detailVC.parkPlate = self.receiptList[indexPath.row].company
+//            detailVC.jobDescription = self.receiptList[indexPath.row].description
+
+            navigationController?.pushViewController(detailVC, animated: true)
+
+            
+        }
+    }
 
 }

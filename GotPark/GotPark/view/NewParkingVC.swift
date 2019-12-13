@@ -39,9 +39,6 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             self.selectedHours = 1
             self.parkingAmount = 4
         }
-//        if (plateNumber != userController.getSelectedUser(email: HomeVC.email)!.carPlate){
-//            showAlert(attempt: false)
-//        }
         if (plateNumber == userController.getSelectedUser(email: HomeVC.email)!.carPlate && buildingCode > 0 && hostSuite > 0) {
             let receipt = Receipt(buildingCode: buildingCode, date: Date(), duration: selectedHours, parkingCost: parkingAmount, parkingPlate: plateNumber, suiteNumber: hostSuite)
             
@@ -49,12 +46,6 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             
             let sbMain: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let receiptVC = sbMain.instantiateViewController(identifier: "ParkingReceiptScene") as! ParkingReceiptVC
-//            receiptVC.buildingCode = buildingCode
-//            receiptVC.date = Date()
-//            receiptVC.duration = selectedHours
-//            receiptVC.parkingCost = parkingAmount
-//            receiptVC.parkPlate = plateNumber
-//            receiptVC.suiteNum = hostSuite
             navigationController?.pushViewController(receiptVC, animated: true)
         }
         else{
@@ -90,7 +81,7 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     func showAlert(attempt: Bool){
         var msg : String = ""
-        msg += "Enter the Same License Plate as the One you Entered for Your Account\n"
+        msg += "Make sure the License Plate Number is the same as the One you Entered for Your Account\n"
         msg += (txtBuildingCode.text ?? "").count == 0 ? "Building Code Cannot Be Empty\n" : ""
         msg += (txtHostSuite.text ?? "").count == 0 ? "Suite Number Cannot Be Empty\n" : ""
 
