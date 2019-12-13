@@ -11,7 +11,7 @@ import UIKit
 
 class ParkingReceiptListCell: UITableViewCell {
 
-    @IBOutlet weak var lblBuildingCode: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
