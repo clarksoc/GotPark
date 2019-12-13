@@ -547,7 +547,6 @@
                         <viewLayoutGuide key="safeArea" id="9nd-kg-3pv"/>
                     </view>
                     <connections>
-                        <outlet property="btnRequestParking" destination="JXK-ej-lEa" id="cof-zD-geF"/>
                         <outlet property="pkNumHours" destination="GPc-cW-rDP" id="DIx-zb-L4U"/>
                         <outlet property="txtBuildingCode" destination="jek-83-0wZ" id="dgm-LU-eox"/>
                         <outlet property="txtHostSuit" destination="h1J-DB-3eK" id="Vps-Gy-mSp"/>
@@ -610,22 +609,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Support " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3b-eU-RYa">
-                                <rect key="frame" x="20" y="445" width="374" height="37"/>
+                                <rect key="frame" x="20" y="429" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CustomerSupportImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Lm-mX-34h">
-                                <rect key="frame" x="10" y="57" width="394" height="380"/>
+                                <rect key="frame" x="10" y="57" width="394" height="364"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Via Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNC-A1-cDM">
-                                <rect key="frame" x="10" y="542" width="394" height="29"/>
+                                <rect key="frame" x="10" y="526" width="394" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tK-Yx-dgB">
-                                <rect key="frame" x="10" y="596" width="394" height="41"/>
+                                <rect key="frame" x="10" y="580" width="394" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="GotParkCustomerSupport@park.ca"/>
                                 <connections>
@@ -633,7 +632,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHi-ZP-uEv">
-                                <rect key="frame" x="10" y="751" width="394" height="41"/>
+                                <rect key="frame" x="10" y="735" width="394" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="1 (800) GOT PARK"/>
                                 <connections>
@@ -641,7 +640,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Via Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOY-24-ciB">
-                                <rect key="frame" x="10" y="697" width="394" height="29"/>
+                                <rect key="frame" x="10" y="681" width="394" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
