@@ -12,6 +12,7 @@ class ParkingReceiptListVC: UITableViewController {
     
     private var receiptList = [Receipt]()
     let receiptController = ReceiptController()
+    let userController = UserController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +25,16 @@ class ParkingReceiptListVC: UITableViewController {
         // Create new item and add it to the task list
         if (allReceipts != nil){
             for receipts in allReceipts{
-                let code = receipts.value(forKey: "buildingCode") as! Int
-                let duration = receipts.value(forKey: "duration") as! Int
-                let parkCost = receipts.value(forKey: "parkCost") as! Int
-                let suiteNumber = receipts.value(forKey: "suiteNumber") as! Int
-                let parkPlate = receipts.value(forKey: "parkPlate") as! String
-                let date = receipts.value(forKey: "date") as! Date
-                let usedReceipt = Receipt(buildingCode: code, date: date, duration: duration, parkingCost: parkCost, parkingPlate: parkPlate, suiteNumber: suiteNumber)
-                receiptList.append(usedReceipt)
+                if receipts.value(forKey: "parkPlate") as! String == userController.getSelectedUser(email: HomeVC.email)!.carPlate {
+                    let code = receipts.value(forKey: "buildingCode") as! Int
+                    let duration = receipts.value(forKey: "duration") as! Int
+                    let parkCost = receipts.value(forKey: "parkCost") as! Int
+                    let suiteNumber = receipts.value(forKey: "suiteNumber") as! Int
+                    let parkPlate = receipts.value(forKey: "parkPlate") as! String
+                    let date = receipts.value(forKey: "date") as! Date
+                    let usedReceipt = Receipt(buildingCode: code, date: date, duration: duration, parkingCost: parkCost, parkingPlate: parkPlate, suiteNumber: suiteNumber)
+                    receiptList.append(usedReceipt)
+                }
             }
         }
         
