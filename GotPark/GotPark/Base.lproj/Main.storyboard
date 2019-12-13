@@ -549,8 +549,8 @@
                     <connections>
                         <outlet property="pkNumHours" destination="GPc-cW-rDP" id="DIx-zb-L4U"/>
                         <outlet property="txtBuildingCode" destination="jek-83-0wZ" id="dgm-LU-eox"/>
-                        <outlet property="txtHostSuit" destination="h1J-DB-3eK" id="Vps-Gy-mSp"/>
-                        <outlet property="txtPlateNum" destination="9dZ-yN-Mi4" id="NLv-3h-bb0"/>
+                        <outlet property="txtHostSuite" destination="h1J-DB-3eK" id="1FY-11-ClH"/>
+                        <outlet property="txtPlateNum" destination="9dZ-yN-Mi4" id="Za4-xR-pR2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lpk-kX-Jlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

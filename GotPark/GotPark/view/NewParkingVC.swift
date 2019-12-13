@@ -13,12 +13,15 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBOutlet var txtBuildingCode: UITextField!
     @IBOutlet var pkNumHours: UIPickerView!
     @IBOutlet var txtPlateNum: UITextField!
-    @IBOutlet var txtHostSuit: UITextField!
+    @IBOutlet var txtHostSuite: UITextField!
     
     var hours: [Int] = [Int]()
     var selectedHours: Int! = 0
     var parkingCost: [Int] = [Int]()
     var parkingAmount: Int! = 0
+    
+    let userController = UserController()
+    let receiptController = ReceiptController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +30,17 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     @IBAction func requestParking(_ sender: Any) {
-        var buildingCode = txtBuildingCode.text ?? ""
-        var plateNumber = txtPlateNum.text ?? ""
-        var hostSuit = txtHostSuit.text ?? ""
+        let buildingCode = Int(txtBuildingCode.text!) ?? 0
+        let plateNumber = txtPlateNum.text ?? ""
+        let hostSuite = Int(txtHostSuite.text!) ?? 0
         
-        
+        if (plateNumber == userController.getSelectedUser(email: HomeVC.email)!.carPlate) {
+            let receipt = Receipt(buildingCode: buildingCode, date: Date(), duration: selectedHours, parkingCost: parkingAmount, parkingPlate: plateNumber, suiteNumber: hostSuite)
+            receiptController.insertReceipt(newReceipt: receipt)
+            let sbMain: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let receiptVC = sbMain.instantiateViewController(identifier: "ParkingReceiptScene")
+            navigationController?.pushViewController(receiptVC, animated: true)
+        }
     }
     
     func populatePicker() {

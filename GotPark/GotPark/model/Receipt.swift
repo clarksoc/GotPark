@@ -13,14 +13,14 @@ class Receipt {
     var duration: Int
     var parkingCost: Int
     var parkingPlate: String
-    var suitNumber: Int
+    var suiteNumber: Int
     
-    init(buildingCode: Int, date: Date, duration: Int, parkingCost: Int, parkingPlate: String, suitNumber: Int) {
+    init(buildingCode: Int, date: Date, duration: Int, parkingCost: Int, parkingPlate: String, suiteNumber: Int) {
         self.buildingCode = buildingCode
         self.date = date
         self.duration = duration
         self.parkingCost = parkingCost
         self.parkingPlate = parkingPlate
-        self.suitNumber = suitNumber
+        self.suiteNumber = suiteNumber
     }
 }
