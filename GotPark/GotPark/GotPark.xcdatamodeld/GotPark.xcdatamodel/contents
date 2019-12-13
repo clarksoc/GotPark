@@ -9,10 +9,10 @@
         <attribute name="suiteNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="PaymentEntity" representedClassName="PaymentEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="creditCVV" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="creditCVV" optional="YES" attributeType="String"/>
         <attribute name="creditExpiry" optional="YES" attributeType="String"/>
         <attribute name="creditName" optional="YES" attributeType="String"/>
-        <attribute name="creditNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="creditNumber" optional="YES" attributeType="String"/>
         <attribute name="email" optional="YES" attributeType="String"/>
     </entity>
     <entity name="UserEntity" representedClassName="UserEntity" syncable="YES" codeGenerationType="class">
