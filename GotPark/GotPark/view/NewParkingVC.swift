@@ -22,13 +22,14 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     let userController = UserController()
     let receiptController = ReceiptController()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.populatePicker()
         // Do any additional setup after loading the view.
     }
-    
+
     @IBAction func requestParking(_ sender: Any) {
         let buildingCode = Int(txtBuildingCode.text!) ?? 0
         let plateNumber = txtPlateNum.text ?? ""
@@ -38,8 +39,10 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             self.selectedHours = 1
             self.parkingAmount = 4
         }
-        
-        if (plateNumber == userController.getSelectedUser(email: HomeVC.email)!.carPlate) {
+//        if (plateNumber != userController.getSelectedUser(email: HomeVC.email)!.carPlate){
+//            showAlert(attempt: false)
+//        }
+        if (plateNumber == userController.getSelectedUser(email: HomeVC.email)!.carPlate && buildingCode > 0 && hostSuite > 0) {
             let receipt = Receipt(buildingCode: buildingCode, date: Date(), duration: selectedHours, parkingCost: parkingAmount, parkingPlate: plateNumber, suiteNumber: hostSuite)
             
             receiptController.insertReceipt(newReceipt: receipt)
@@ -54,6 +57,10 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
 //            receiptVC.suiteNum = hostSuite
             navigationController?.pushViewController(receiptVC, animated: true)
         }
+        else{
+            showAlert(attempt: false)
+        }
+
     }
     
     func populatePicker() {
@@ -81,14 +88,15 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         self.parkingAmount = self.parkingCost[row]
     }
     
-    /*
-    // MARK: - Navigation
+    func showAlert(attempt: Bool){
+        var msg : String = ""
+        msg += "Enter the Same License Plate as the One you Entered for Your Account\n"
+        msg += (txtBuildingCode.text ?? "").count == 0 ? "Building Code Cannot Be Empty\n" : ""
+        msg += (txtHostSuite.text ?? "").count == 0 ? "Suite Number Cannot Be Empty\n" : ""
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+        let alertController = UIAlertController(title: "Add Receipt Attempt", message: msg, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
     }
-    */
-
 }
