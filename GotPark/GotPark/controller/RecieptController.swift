@@ -56,4 +56,22 @@ public class ReceiptController {
         return nil
 
     }
+    
+    func getAllReceipts() -> [NSManagedObject]?{
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return nil
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ParkingEntity")
+        
+        do{
+            let result = try managedContext.fetch(fetchRequest)
+            return result as? [NSManagedObject]
+        }catch{
+            print("Data fetching Unsuccessful")
+        }
+        return nil
+    }
 }
