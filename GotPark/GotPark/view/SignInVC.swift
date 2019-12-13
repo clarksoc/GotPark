@@ -12,6 +12,7 @@ class SignInVC: UIViewController {
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let userController = UserController()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +42,6 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func btnSignUp(_ sender: Any) {
-        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let SignUpVC = mainSB.instantiateViewController(withIdentifier: "SignUpScene") as! SignUpVC
         navigationController?.pushViewController(SignUpVC, animated: true)
     }
