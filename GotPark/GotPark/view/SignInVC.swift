@@ -16,6 +16,7 @@ class SignInVC: UIViewController {
     let userController = UserController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated:true);
     }
     
     @IBAction func btnLogin(_ sender: Any) {
