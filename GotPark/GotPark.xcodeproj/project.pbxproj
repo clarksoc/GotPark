@@ -12,6 +12,7 @@
 		6397E80C23A2ED930062E531 /* RecieptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397E80B23A2ED930062E531 /* RecieptController.swift */; };
 		6397E80E23A32FAB0062E531 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397E80D23A32FAB0062E531 /* User.swift */; };
 		6397E81023A338D60062E531 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397E80F23A338D60062E531 /* CreditCard.swift */; };
+		63CB7DFC23A41BBD00284D1A /* ParkingRecieptListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7DFB23A41BBD00284D1A /* ParkingRecieptListCell.swift */; };
 		63F7B99123A3F93500DAC69E /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7B99023A3F93500DAC69E /* EditVC.swift */; };
 		720D852A2389BC8B00013B6B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D85292389BC8B00013B6B /* SignUpVC.swift */; };
 		720D852C2389BC9A00013B6B /* LocateNearbyParkingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D852B2389BC9A00013B6B /* LocateNearbyParkingVC.swift */; };
@@ -40,6 +41,7 @@
 		6397E80B23A2ED930062E531 /* RecieptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieptController.swift; sourceTree = "<group>"; };
 		6397E80D23A32FAB0062E531 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6397E80F23A338D60062E531 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		63CB7DFB23A41BBD00284D1A /* ParkingRecieptListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingRecieptListCell.swift; sourceTree = "<group>"; };
 		63F7B99023A3F93500DAC69E /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		720D85292389BC8B00013B6B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		720D852B2389BC9A00013B6B /* LocateNearbyParkingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateNearbyParkingVC.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				720D852F2389BCB700013B6B /* NewParkingVC.swift */,
 				720D85312389BCC100013B6B /* ParkingReceiptVC.swift */,
 				720D85332389BCD900013B6B /* ParkingReceiptListVC.swift */,
+				63CB7DFB23A41BBD00284D1A /* ParkingRecieptListCell.swift */,
 				720D85352389BCF500013B6B /* HomeVC.swift */,
 				720D85392389BFC000013B6B /* SignInVC.swift */,
 				924225E42389CDF90001582C /* AppManualVC.swift */,
@@ -241,6 +244,7 @@
 				6397E80E23A32FAB0062E531 /* User.swift in Sources */,
 				720D85342389BCD900013B6B /* ParkingReceiptListVC.swift in Sources */,
 				720D85322389BCC100013B6B /* ParkingReceiptVC.swift in Sources */,
+				63CB7DFC23A41BBD00284D1A /* ParkingRecieptListCell.swift in Sources */,
 				720D852C2389BC9A00013B6B /* LocateNearbyParkingVC.swift in Sources */,
 				6397E80A23A2ED7F0062E531 /* CreditCardController.swift in Sources */,
 				6397E81023A338D60062E531 /* CreditCard.swift in Sources */,
