@@ -44,7 +44,14 @@ class ParkingReceiptVC: UIViewController {
                 let date = formatter.string(from: receipt.value(forKey: "date") as! Date)
                 lblCarPlate.text = receipt.value(forKey: "parkPlate") as? String
                 lblDate.text = date
-                lblDuration.text = duration
+
+                if(duration == "1"){
+                    lblDuration.text = duration + " Hour"
+                }
+                else{
+                    lblDuration.text = duration + " Hours"
+                }
+                
                 lblBuildingCode.text = buildingCode
                 lblParkingCost.text = parkCost
                 lblSuite.text = suiteNumber

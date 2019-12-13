@@ -34,6 +34,11 @@ class NewParkingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         let plateNumber = txtPlateNum.text ?? ""
         let hostSuite = Int(txtHostSuite.text!) ?? 0
         
+        if(selectedHours == 0){
+            self.selectedHours = 1
+            self.parkingAmount = 4
+        }
+        
         if (plateNumber == userController.getSelectedUser(email: HomeVC.email)!.carPlate) {
             let receipt = Receipt(buildingCode: buildingCode, date: Date(), duration: selectedHours, parkingCost: parkingAmount, parkingPlate: plateNumber, suiteNumber: hostSuite)
             
