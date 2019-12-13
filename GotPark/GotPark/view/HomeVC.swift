@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeVC: UIViewController {
-    
+    static var user = User(firstName: "", lastName: "", email: "", password: "", phoneNumber: "", carPlate: "")
     let sbMain : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
     override func viewDidLoad() {
@@ -53,5 +53,10 @@ class HomeVC: UIViewController {
         let supportVC = sbMain.instantiateViewController(withIdentifier: "SupportScene") as! CustomerSupportVC
         
         navigationController?.pushViewController(supportVC, animated: true)
+    }
+    @IBAction func btnSignOut(_ sender: Any) {
+        let signInVC = sbMain.instantiateViewController(withIdentifier: "SignInScene") as! SignInVC
+        
+        navigationController?.pushViewController(signInVC, animated: true)
     }
 }

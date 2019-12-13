@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7bg-Ws-3Ja">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cDH-sY-mzs">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -91,7 +91,7 @@
                         <viewLayoutGuide key="safeArea" id="HfB-1e-eCl"/>
                     </view>
                     <connections>
-                        <outlet property="txtEmal" destination="iA1-g0-W5m" id="Xjc-oK-uhw"/>
+                        <outlet property="txtEmail" destination="iA1-g0-W5m" id="Pij-z1-lxX"/>
                         <outlet property="txtPassword" destination="qMW-Jg-qdB" id="DhA-lt-CTh"/>
                     </connections>
                 </viewController>
@@ -220,6 +220,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofg-6h-2vw">
+                                <rect key="frame" x="20" y="824" width="50" height="30"/>
+                                <state key="normal" title="SignUp"/>
+                                <connections>
+                                    <action selector="btnSignUp:" destination="vjQ-5s-caI" eventType="touchUpInside" id="qtF-Jc-8xY"/>
+                                    <action selector="test:" destination="Wvv-1w-bGT" eventType="touchUpInside" id="Mmj-yr-SlA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -243,6 +251,7 @@
                             <constraint firstItem="r00-AZ-OOq" firstAttribute="trailing" secondItem="SJZ-Ts-YXQ" secondAttribute="trailing" constant="20" id="FGV-Ip-9p7"/>
                             <constraint firstItem="JCJ-dg-bAI" firstAttribute="leading" secondItem="r00-AZ-OOq" secondAttribute="leading" constant="20" id="GFJ-Ah-IAx"/>
                             <constraint firstItem="SJZ-Ts-YXQ" firstAttribute="top" secondItem="XuI-qk-kYD" secondAttribute="bottom" constant="15" id="GkU-l6-CIO"/>
+                            <constraint firstItem="ofg-6h-2vw" firstAttribute="leading" secondItem="r00-AZ-OOq" secondAttribute="leading" constant="20" id="H5y-b4-y5m"/>
                             <constraint firstItem="r00-AZ-OOq" firstAttribute="trailing" secondItem="FGZ-bQ-Jvm" secondAttribute="trailing" constant="20" id="Hhv-lk-7cK"/>
                             <constraint firstItem="r00-AZ-OOq" firstAttribute="trailing" secondItem="JCJ-dg-bAI" secondAttribute="trailing" constant="20" id="IC1-vd-P3I"/>
                             <constraint firstItem="r00-AZ-OOq" firstAttribute="trailing" secondItem="l2S-aZ-6Av" secondAttribute="trailing" constant="20" id="Ig0-7m-kxa"/>
@@ -260,6 +269,8 @@
                             <constraint firstItem="8l3-ry-cwI" firstAttribute="top" secondItem="KXb-Zv-EM9" secondAttribute="bottom" constant="15" id="Vz5-bD-Rfc"/>
                             <constraint firstItem="a11-Ep-n7V" firstAttribute="leading" secondItem="r00-AZ-OOq" secondAttribute="leading" constant="20" id="Whl-cy-dpQ"/>
                             <constraint firstItem="RB9-qi-1D9" firstAttribute="top" secondItem="LU9-hd-Rge" secondAttribute="bottom" constant="15" id="Wtm-K2-61g"/>
+                            <constraint firstItem="r00-AZ-OOq" firstAttribute="trailing" secondItem="ofg-6h-2vw" secondAttribute="trailing" constant="344" id="a95-ex-RGO"/>
+                            <constraint firstItem="ofg-6h-2vw" firstAttribute="top" secondItem="FGZ-bQ-Jvm" secondAttribute="bottom" constant="15" id="aFs-CC-7LL"/>
                             <constraint firstItem="QbT-D7-UgX" firstAttribute="top" secondItem="a9o-jH-na8" secondAttribute="bottom" constant="15" id="bH0-wt-k84"/>
                             <constraint firstItem="l2S-aZ-6Av" firstAttribute="leading" secondItem="r00-AZ-OOq" secondAttribute="leading" constant="20" id="bj3-ha-xvd"/>
                             <constraint firstItem="XuI-qk-kYD" firstAttribute="top" secondItem="RB9-qi-1D9" secondAttribute="bottom" constant="15" id="bqP-r3-YaK"/>
@@ -285,7 +296,6 @@
                         <viewLayoutGuide key="safeArea" id="r00-AZ-OOq"/>
                     </view>
                     <connections>
-                        <outlet property="lblFirstName" destination="QbT-D7-UgX" id="TS4-fb-C6h"/>
                         <outlet property="txtCVV" destination="SJZ-Ts-YXQ" id="2H8-8J-u7P"/>
                         <outlet property="txtCarPlate" destination="4ec-MC-T1K" id="9nt-Xx-gZ0"/>
                         <outlet property="txtCardName" destination="FGZ-bQ-Jvm" id="pRU-cY-W6n"/>
@@ -299,6 +309,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efh-9S-HwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Wvv-1w-bGT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="971.01449275362324" y="-612.05357142857144"/>
         </scene>
@@ -367,6 +378,9 @@
                                 <state key="normal" title="Sign Out">
                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPT-an-gxP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npq-jf-bIX">
                                 <rect key="frame" x="20" y="639" width="374" height="36"/>
