@@ -25,7 +25,7 @@ public class CreditCardController{
             let creditCard = NSManagedObject(entity: PaymentEntity!, insertInto: managedContext)
             
             creditCard.setValue(newCreditCard.email, forKey: "email")
-            creditCard.setValue(newCreditCard.cardName, forKey: "cardName")
+            creditCard.setValue(newCreditCard.cardName, forKey: "creditName")
             creditCard.setValue(newCreditCard.creditCard, forKey: "creditNumber")
             creditCard.setValue(newCreditCard.cvv, forKey: "creditCVV")
             creditCard.setValue(newCreditCard.expiryDate, forKey: "creditExpiry")
