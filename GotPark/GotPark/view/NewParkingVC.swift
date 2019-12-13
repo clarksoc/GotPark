@@ -10,13 +10,33 @@ import UIKit
 
 class NewParkingVC: UIViewController {
 
+    @IBOutlet var txtBuildingCode: UITextField!
+    @IBOutlet var pkNumHours: UIPickerView!
+    @IBOutlet var txtPlateNum: UITextField!
+    @IBOutlet var txtHostSuit: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func requestParking(_ sender: Any) {
+        
+    }
+    
+    func populatePicker() {
+        func populatePickers(){
+            //initialize array data
+            //coffeeData = ["Dark Roast", "Original Blend", "French Vannilla", "Latte"]
+            //coffeeAmount = [1.20, 0.90, 1.25, 2.00]
+            
+            //connect data
+            //self.coffeePicker.delegate = self
+            //self.coffeePicker.dataSource = self
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
