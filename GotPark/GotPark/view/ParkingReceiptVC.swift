@@ -31,9 +31,14 @@ class ParkingReceiptVC: UIViewController {
         
         lblCarPlate.text = self.parkPlate
         lblDate.text = formatter.string(from: self.date)
-        lblDuration.text = String(self.duration)
+        if(self.duration == 1){
+            lblDuration.text = String(self.duration) + " Hour"
+        }
+        else{
+            lblDuration.text = String(self.duration) + " Hours"
+        }
         lblBuildingCode.text = String(self.buildingCode)
-        lblParkingCost.text = String(self.parkingCost)
+        lblParkingCost.text = "$" + String(self.parkingCost)
         lblSuite.text = String(self.suiteNum)
     }
     
