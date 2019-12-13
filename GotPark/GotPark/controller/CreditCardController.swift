@@ -40,7 +40,7 @@ public class CreditCardController{
         }
     }
     
-    func updateUser(creditCard : CreditCard, oldEmail : String){
+    func updateCreditCard(creditCard : CreditCard, oldEmail : String){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
             return
         }
@@ -57,7 +57,7 @@ public class CreditCardController{
             let existingCreditCard = result[0] as! NSManagedObject
             
             existingCreditCard.setValue(creditCard.email, forKey: "email")
-            existingCreditCard.setValue(creditCard.cardName, forKey: "cardName")
+            existingCreditCard.setValue(creditCard.cardName, forKey: "creditName")
             existingCreditCard.setValue(creditCard.creditCard, forKey: "creditNumber")
             existingCreditCard.setValue(creditCard.cvv, forKey: "creditCVV")
             existingCreditCard.setValue(creditCard.expiryDate, forKey: "creditExpiry")
@@ -74,7 +74,7 @@ public class CreditCardController{
         
     }
     
-    func deleteUser(email: String){
+    func deleteCreditCard(email: String){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
             return
         }
@@ -112,7 +112,7 @@ public class CreditCardController{
             for creditCard in allCreditCards{
                 let em = creditCard.value(forKey: "email") as! String
                 if (em == email){
-                    return CreditCard(email: em, creditCard: (creditCard.value(forKey: "creditCard")as! String), expiryDate: (creditCard.value(forKey: "expiryDate")as! String), cvv: (creditCard.value(forKey: "cvv")as! String), cardName: (creditCard.value(forKey: "cardName")as! String))
+                    return CreditCard(email: em, creditCard: (creditCard.value(forKey: "creditNumber")as! String), expiryDate: (creditCard.value(forKey: "creditExpiry")as! String), cvv: (creditCard.value(forKey: "creditCVV")as! String), cardName: (creditCard.value(forKey: "creditName")as! String))
                 }
             }
         }
@@ -126,7 +126,7 @@ public class CreditCardController{
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserEntity")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PaymentEntity")
         
         do{
             let result = try managedContext.fetch(fetchRequest)

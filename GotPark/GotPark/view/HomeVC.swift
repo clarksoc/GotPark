@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeVC: UIViewController {
-    static var user = User(firstName: "", lastName: "", email: "", password: "", phoneNumber: "", carPlate: "")
+    static var email = ""
     let sbMain : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
     override func viewDidLoad() {
@@ -22,6 +22,12 @@ class HomeVC: UIViewController {
         let newVC = sbMain.instantiateViewController(withIdentifier: "NewScene") as! NewParkingVC
         
         navigationController?.pushViewController(newVC, animated: true)
+    }
+    
+    @IBAction func btnUpdate(_ sender: Any) {
+        let editVC = sbMain.instantiateViewController(withIdentifier: "EditScene") as! EditVC
+            
+            navigationController?.pushViewController(editVC, animated: true)
     }
     
     @IBAction func viewReceiptClick(_ sender: Any) {
