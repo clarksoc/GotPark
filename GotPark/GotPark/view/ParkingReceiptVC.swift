@@ -85,5 +85,10 @@ class ParkingReceiptVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func btnHome(_ sender: Any) {
+        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeVC = mainSB.instantiateViewController(withIdentifier: "HomeScene") as! HomeVC
+        navigationController?.pushViewController(homeVC, animated: true)
+    }
+    
 }

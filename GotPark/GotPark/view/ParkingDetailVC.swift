@@ -44,7 +44,12 @@ class ParkingDetailVC: UIViewController {
         
     }
     
-
+    @IBAction func btnHome(_ sender: Any) {
+        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeVC = mainSB.instantiateViewController(withIdentifier: "HomeScene") as! HomeVC
+        navigationController?.pushViewController(homeVC, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
