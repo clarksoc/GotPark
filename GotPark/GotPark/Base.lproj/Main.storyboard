@@ -740,9 +740,6 @@
                                         <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="KYZ-2j-9jZ" secondAttribute="trailing" constant="198" id="wfT-oG-dMO"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="lblBuildingCode" destination="KYZ-2j-9jZ" id="ILM-hw-nt4"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

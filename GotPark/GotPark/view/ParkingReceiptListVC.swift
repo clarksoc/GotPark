@@ -24,13 +24,13 @@ class ParkingReceiptListVC: UITableViewController {
         // Create new item and add it to the task list
         if (allReceipts != nil){
             for receipts in allReceipts{
-                let code = task.value(forKey: "buildingCode") as! Integer64
-                let duration = task.value(forKey: "duration") as! Integer64
-                let parkCost = task.value(forKey: "parkCost") as! Integer64
-                let suiteNumber = task.value(forKey: "suiteNumber") as! Integer64
-                let parkPlate = task.value(forKey: "parkPlate") as! Integer64
-                let date = task.value(forKey: "date") as! Date
-                var usedReceipt = Receipt(buildingCode: code, date: date, duration: duration, parkingCost: parkCost, parkingPlate: parkPlate, suiteNumber: suiteNumber)
+                let code = receipts.value(forKey: "buildingCode") as! Int
+                let duration = receipts.value(forKey: "duration") as! Int
+                let parkCost = receipts.value(forKey: "parkCost") as! Int
+                let suiteNumber = receipts.value(forKey: "suiteNumber") as! Int
+                let parkPlate = receipts.value(forKey: "parkPlate") as! String
+                let date = receipts.value(forKey: "date") as! Date
+                let usedReceipt = Receipt(buildingCode: code, date: date, duration: duration, parkingCost: parkCost, parkingPlate: parkPlate, suiteNumber: suiteNumber)
                 receiptList.append(usedReceipt)
             }
         }
