@@ -10,10 +10,31 @@ import UIKit
 
 class ParkingReceiptVC: UIViewController {
 
+    @IBOutlet weak var lblCarPlate: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var lblDuration: UILabel!
+    @IBOutlet weak var lblBuildingCode: UILabel!
+    @IBOutlet weak var lblParkingCost: UILabel!
+    @IBOutlet weak var lblSuite: UILabel!
+    
+    var parkPlate: String! = ""
+    var date: Date! = Date()
+    var duration: Int! = 0
+    var buildingCode: Int! = 0
+    var parkingCost: Int! = 0
+    var suiteNum: Int! = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy"
+        
+        lblCarPlate.text = self.parkPlate
+        lblDate.text = formatter.string(from: self.date)
+        lblDuration.text = String(self.duration)
+        lblBuildingCode.text = String(self.buildingCode)
+        lblParkingCost.text = String(self.parkingCost)
+        lblSuite.text = String(self.suiteNum)
     }
     
 
